@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><p class="winner">Winner</p></div>
+    <canvas></canvas>
+
+
+
+
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        div{
+            position: absolute;
+            display: flex;
+            width: 100vw;
+            height: 60vh;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 8em;
+            color: white;
+            text-shadow: 2px 2px 10px rgb(255, 255, 255);
+            scale: 0;
+            transition: 0.8s all ease;
+        }
+        p.active{
+            scale: 1;
+        }
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
